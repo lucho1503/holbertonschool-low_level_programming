@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-/* hello world */
+/* hello world
+ *programming
+ */
 
-main()	 
+char main()	 
 {
   puts("Programming is like building a multilingual puzzle");
   return(0);
 }
- 
