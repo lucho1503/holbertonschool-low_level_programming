@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-printf("Size of int data type : %d\n", sizeof(int));
-printf("Size of char data type : %d\n", sizeof(char));
-printf("Size of float data type : %d\n", sizeof(float));
-printf("Size of double data type : %d\n", sizeof(double));
+printf("Size of int data type :" sizeof(int));
+printf("Size of char data type :" sizeof(char));
+printf("Size of float data type :" sizeof(float));
+printf("Size of double data type :" sizeof(double));
 return (0);
 }
