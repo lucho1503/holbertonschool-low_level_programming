@@ -1,2 +1,2 @@
 #!/bin/bash
-cc -c hello_world.c
+cc -c scanf("%",&CFILE);
