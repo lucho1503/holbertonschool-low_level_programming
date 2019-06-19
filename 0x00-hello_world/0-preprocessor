@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp -E scanf("%",&$CFILE);
+$CFILE=cpp -E
