@@ -16,10 +16,16 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 if (n == 0)
-printf(n, "is zero % d \n");
+{
+	printf("is zero %d \n", n);
+}
 else if (n < 0)
-printf(n, "is negative % d \n");
+{
+	printf("is negative %d \n", n);
+}
 else
-printf(n, "is positive % d \n");
+{
+	printf("is positive %d \n", n);
+}
 return (0);
 }
