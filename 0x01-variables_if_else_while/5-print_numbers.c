@@ -1,10 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: All single digit numbers of base 10 starting from 0
  **/
 int main(void)
 {
-printf("0123456789\n");
+char z;
+for (z = '0'; z <= '9'; z++)
+putchar(z);
+putchar('\n');
+return (0);
 }
