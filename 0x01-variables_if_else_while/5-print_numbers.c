@@ -6,8 +6,5 @@
  **/
 int main(void)
 {
-char n;
-for (n = 0; n < 10; n++)
-putchar(n);
-putchar('\n');
+printf("0123456789\n");
 }
