@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - check the code for Holberton School students.
+ *
+ * Description: print_alphabet in lowercase.
  *
  * Return: Always 0.
  */
