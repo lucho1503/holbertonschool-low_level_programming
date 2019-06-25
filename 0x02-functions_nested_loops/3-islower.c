@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * int _islower(int c) - check the code for Holberton School students.
+ * int _islower - check the code for Holberton School students.
  *
- * Description: int _islower(int c) in lowercase.
+ * Description: int _islower in lowercase.
  *
  * Return: Always 0.
  */
