@@ -6,13 +6,12 @@
  **/
 int main(void)
 {
-  char h[] = "Holberton\n";
-	int i = 0;
-	
-		while (h[i] != '\0')
-		{
-			_putchar(h[i]);
-			i++;
-		}
-	return (0);
+char h[] = "Holberton\n";
+int i = 0;	
+while (h[i] != '\0')
+{
+_putchar(h[i]);
+i++;
+}
+return (0);
 }
