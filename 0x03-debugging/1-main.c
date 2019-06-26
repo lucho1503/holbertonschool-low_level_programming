@@ -10,7 +10,7 @@ int main(void)
 	int i;
 
 	printf("Infinite loop incoming :(\n");
-/**
+/*
  * i - causes an infinite loop i = 0;
  *
  * while (i < 10)
