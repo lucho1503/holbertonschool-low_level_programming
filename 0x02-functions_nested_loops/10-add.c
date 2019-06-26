@@ -1,13 +1,13 @@
 #include "holberton.h"
 /**
- * print_last_digit - last digit.
+ * add - adds two integers.
  *
- * @i: find the last digit.
- *
- * Return: the last digit.
+ * @x: variable integer and add.
+ * @y: variable integer and add.
+ * Return: adds of variables x and y
  */
 int add(int x, int y)
 {
-	int z = x + y;
-	return (z);
+int z = x + y;
+return (z);
 }
