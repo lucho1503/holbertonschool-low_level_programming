@@ -9,17 +9,16 @@
 
 int main(void)
 {
-long int y, a;
+long double y, a;
 int z = 1;
 int x = 2;
 printf("%d, %d, ", z, x);
-for (a = 1; a <= 50; a++)
+for (a = 0; a <= 98; a++)
 {
 y = x + z;
 z = x;
 x = y;
-printf("%ld, ", y);
+printf("%LG, \n", y);
 }
-putchar('\n');
 return (0);
 }
