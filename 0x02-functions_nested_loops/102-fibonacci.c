@@ -12,12 +12,13 @@ int main(void)
 long double y, a, x, z;
 z = 1;
 x = 2;
-printf("%LG,\n%LG,\n", z, x);
+printf("%LG, %LG, ", z, x);
 for (a = 0; a <= 98; a++)
 {
 y = x + z;
-printf("%LG, \n", y);
+printf("%LG, ", y);
 z = x;
 x = y;
 }
+printf("\n");
 }
