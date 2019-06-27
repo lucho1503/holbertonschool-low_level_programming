@@ -9,14 +9,14 @@
 
 int main(void)
 {
-long double y, a;
+unsigned long int y, a;
 int z = 1;
 int x = 2;
 printf("%d, %d, ", z, x);
 for (a = 3; a <= 50; a++)
 {
 y = x + z;
-printf("%LG, ", y);
+printf("%lu, ", y);
 z = x;
 x = y;
 }
