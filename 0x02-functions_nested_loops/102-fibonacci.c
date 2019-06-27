@@ -9,7 +9,7 @@
 
 int main(void)
 {
-long long int y, a;
+long int y, a;
 int z = 1;
 int x = 2;
 printf("%d, %d, ", z, x);
@@ -18,7 +18,7 @@ for (a = 1; a <= 50; a++)
 y = x + z;
 z = x;
 x = y;
-printf("%lld, ", y);
+printf("%ld, ", y);
 }
 putchar('\n');
 return (0);
