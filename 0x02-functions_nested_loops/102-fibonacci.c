@@ -4,22 +4,22 @@
  *
  *
  *
- * Return: alwasys 0.
+ * Return: 0.
  */
 
 int main(void)
 {
-long int y, a;
+unsigned long int y, a;
 int z = 1;
 int x = 2;
 printf("%d, %d, ", z, x);
-for (a = 1; a <= 50; a++)
+for (a = 3; a <= 50; a++)
 {
 y = x + z;
+printf("%lu, ", y);
 z = x;
 x = y;
-printf("%ld, ", y);
 }
-putchar('\n');
+printf("\n");
 return (0);
 }
