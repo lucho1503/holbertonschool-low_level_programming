@@ -4,15 +4,15 @@
  *
  *
  *
- * Return: any.
+ * Return: 0.
  */
 
 int main(void)
 {
-long double y, a, x, z;
-z = 1;
-x = 2;
-printf("%LG, %LG, ", z, x);
+long double y, a;
+int z = 1;
+int x = 2;
+printf("%d, %d, ", z, x);
 for (a = 0; a <= 98; a++)
 {
 y = x + z;
@@ -21,4 +21,5 @@ z = x;
 x = y;
 }
 printf("\n");
+return (0);
 }
