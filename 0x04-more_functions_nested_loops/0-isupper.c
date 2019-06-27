@@ -1,0 +1,21 @@
+#include "holberton.h"
+
+/**
+ * _isupper - check if isupper.
+ *
+ * @c: _isupeer: character to isupper.
+ *
+ * Return: 1 if is succes,0 otheriwise.
+ */
+
+int _isupper(int c)
+{
+if (c == 'A')
+{
+return (1);
+}
+else
+{
+return (0);
+}
+}
