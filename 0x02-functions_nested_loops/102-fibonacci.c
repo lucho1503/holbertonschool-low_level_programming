@@ -4,7 +4,7 @@
  *
  *
  *
- * Return: alwasys 0.
+ * Return: any.
  */
 
 int main(void)
@@ -20,5 +20,4 @@ z = x;
 x = y;
 printf("%LG, \n", y);
 }
-return (0);
 }
