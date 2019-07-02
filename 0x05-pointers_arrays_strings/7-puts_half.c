@@ -17,6 +17,8 @@ z++;
 y = z % 2;
 y = z / 2;
 for (; y < z; y++)
+	{
 _putchar(str[y]);
+	}
 _putchar('\n');
 }
