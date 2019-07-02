@@ -14,9 +14,8 @@ for (; str[z] != 0;)
 {
 z++;
 }
-y = z % 2;
-y = z / 2;
-for (; y < z; y++)
+y = z % 2 == 0;
+for (y = z / 2; y < z; y++)
 	{
 _putchar(str[y]);
 	}
