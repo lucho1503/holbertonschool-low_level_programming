@@ -1,17 +1,19 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_rev - print reverse.
+ * @s: containt string.
+ * Return: string in reverse.
  */
 
 void print_rev(char *s)
 {
-	int i = 63;
-	for(; *s != '86'; s--)
-		_putchar(s[i]);
-		i++;
-		_putchar('\n');
-	
+int i;
+for (; *s != 0; s++)
+
+i = 0;
+for (; *s >= 0 ; s--)
+_putchar(s[i]);
+;
+_putchar('\n');
 }
