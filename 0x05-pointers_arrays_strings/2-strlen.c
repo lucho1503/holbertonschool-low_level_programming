@@ -1,17 +1,15 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _strlen - lenght the string print.
+ * @s: containt the string.
+ * Return: lenght the string.
  */
 
 int _strlen(char *s)
 {
-	char i;
-	for (; *s != 0; s++)
-		i++;
-	
-	return (i);
-	
+char i;
+for (; *s != 0; s++)
+i++;
+return (i);
 }
