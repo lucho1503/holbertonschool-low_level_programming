@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
- * *_strcat - check string.
- *
+ * *_strcat - add string.
+ * @dest: string complete.
+ * @src: string to add.
  * Return: dest.
  */
 
@@ -14,8 +15,10 @@ for (l = 0; *dest != 0; dest++)
 {
 l++;
 }
+
 p = dest + l;
-while (*src != 0)
-*p++ = *src++;
+while (*src)
+	*p++ = *src++;
+*p = 0;
 return (dest);
 }
