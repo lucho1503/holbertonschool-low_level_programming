@@ -42,5 +42,6 @@ else if (s[z] == 0)
 s[z] -= 32;
 }
 }
+}
 return (s);
 }
