@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * *leet - entry point.
+ * @p: pointer to replaced to string.
+ * Return: string replaced.
  */
 
 char *leet(char *p)
@@ -12,7 +12,8 @@ char *leet(char *p)
 	int x;
 	char a[6] = "aeolt";
 	char b[6] = "AEOLT";
-	char c[6] = "43017";	
+	char c[6] = "43017";
+
 	for (; p[z] != 0; z++)
 	{
 		for (x = 0; x < 5; x++)
