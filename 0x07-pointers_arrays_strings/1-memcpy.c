@@ -1,17 +1,18 @@
 #include "holberton.h"
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * *_memcpy - entry point.
+ * @src: bytes from memory.
+ * @n: the size of the memory to print.
+ * @dest: copy bytes from src.
  *
- * Return: Nothing.
+ * Return: dest with bytes.
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
-	for (i = 0; i < n; i++)
-		dest[i] = src[i];
-			return (dest);
+unsigned int i;
+for (i = 0; i < n; i++)
+dest[i] = src[i];
+return (dest);
 }
