@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * set_string - entry point.
+ * @s: pointer a char.
+ * @to: variable value.
+ * Return: string.
  */
 
 void set_string(char **s, char *to)
