@@ -21,5 +21,5 @@ for (j = 1; j <= size ; j++)
 c = (size - 1) * j;
 b = b + *(a + c);
 }
-printf("%d, %d \n", x, b);
+printf("%d, %d\n", x, b);
 }
