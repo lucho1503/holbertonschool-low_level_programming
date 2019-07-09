@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * *_strstr - entry point.
@@ -9,11 +10,17 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-int i;
+	int i, j;
+	char *p = needle;
 for (i = 0; haystack[i] != 0; i++)
 {
-if (*haystack == *needle)
-return (haystack);
+	for (j = 0; needle[j] != 0; j++)
+	{
+		if (haystack[i] == needle[j])
+		{
+			return (p);
+		}
+	}
 }
-return (needle);
+return (NULL);
 }
