@@ -1,23 +1,23 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * factorial - entry point.
+ * @n: contains numbers to fac.
+ * Return: factorial of n.
  */
 
 int factorial(int n)
 {
-	if (n < 0)
-		{
-			return (-1);
-		}
-	else if (n  == 0)
-		{
-			return (1);
-		}
-	else
-		{
-			return (n * factorial(n - 1));
-		}
+if (n < 0)
+{
+return (-1);
+}
+else if (n  == 0)
+{
+return (1);
+}
+else
+{
+return (n * factorial(n - 1));
+}
 }
