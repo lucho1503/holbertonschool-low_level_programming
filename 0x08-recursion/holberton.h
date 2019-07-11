@@ -10,5 +10,6 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int _putchar(char c);
+int raiz(int n, int i);
 
 #endif /* _SAMPLE_HEADER_H_ */
