@@ -22,23 +22,29 @@ int _sqrt_recursion(int n)
 		}
 	else
 		{
-			return (_sqrt(int n, 1)); 
+			return (raiz (n, 1));
 		}
 }
 
-int _sqrt(int n, int i)
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+
+int raiz(int n, int i)
 {
-	i = 1;
-	if (n == i * i)
+	
+	if (n == (i * i))
 		{
 			return (i);
 		}
-	else if (n < i * i)
+	else if (n > (i * i))
 		{
-			return (-1);
+			return (raiz (n, i + 1));
 		}
 	else
 		{
-			return (_sqrt (n, i++)); 
+			return (-1); 
 		}
 }
