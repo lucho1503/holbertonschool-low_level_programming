@@ -32,7 +32,7 @@ while (s2[l2] != 0)
 {
 l2++;
 }
-p = malloc((l1 + l2 + 1) *sizeof(char));
+p = malloc((l1 + l2 + 1) * sizeof(char));
 if (p == NULL)
 {
 return ('\0');
