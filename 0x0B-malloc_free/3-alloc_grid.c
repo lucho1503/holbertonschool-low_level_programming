@@ -15,13 +15,13 @@ int i, j;
 int **p;
 if (width <= 0 || height <= 0)
 {
-return (NULL);
+return ('\0');
 }
-p = malloc(height * sizeof(int));
+p = malloc(height * sizeof(int *));
 if (p == NULL)
 {
 free(p);
-return (NULL);
+return ('\0');
 }
 for (i = 0; i < height; i++)
 {
@@ -33,7 +33,7 @@ for (; i >= 0; i--)
 free(p[i]);
 }
 free(p);
-return (NULL);
+return ('\0');
 }
 }
 for (i = 0; i < height; i++)
