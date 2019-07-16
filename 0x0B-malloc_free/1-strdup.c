@@ -11,17 +11,22 @@
 char *_strdup(char *str)
 {
 char *dest;
-int i;
+int i, s = 0;
+
 if (str == NULL)
 {
 return (NULL);
 }
-dest = malloc(10 * sizeof(char));
+while (*(str + s))
+	s++;
+s++;
+dest = malloc((s) * sizeof(char));
 if (dest == NULL)
 {
 return (NULL);
 }
-for (i = 0; str[i] != 0; i++)
+
+for (i = 0; i < (s); i++)
 {
 dest[i] = str[i];
 }
