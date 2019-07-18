@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * *string_nconcat - entry point.
  * @s1: string 1 for concat.
@@ -9,14 +8,10 @@
  * @n: length to string 2.
  * Return: pointer to first element of array.
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *p;
-int i;
-unsigned int j;
-int l1 = 0;
-unsigned int l2 = 0;
+unsigned int j, i, l1 = 0, l2 = 0;
 if (s1 == NULL)
 {
 s1 = "";
@@ -35,20 +30,24 @@ l2++;
 }
 if (n >= l2)
 {
-return (s2);
+n = l2;
 }
-p = malloc((l1 + l2 + 1) *sizeof(char));
+p = malloc((l1 + n + 1) * sizeof(char));
 if (p == NULL)
 {
 return (NULL);
 }
-for (i = 0; s1[i] != 0; i++)
+else
+{
+for (i = 0; i < l1; i++)
 {
 p[i] = s1[i];
 }
-for (j = 0; j <= (n - 1); j++)
+for (j = 0; j < n; j++)
 {
 p[i + j] = s2[j];
 }
+}
+p[i + j] = '\0';
 return (p);
 }
