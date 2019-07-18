@@ -3,22 +3,18 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * *malloc_checked - entry point.
+ * @b: size of malloc.
+ * Return: pointer to first element of malloc.
  */
 
 void *malloc_checked(unsigned int b)
 {
-	
-	unsigned int *p;
-
-	p = malloc(sizeof(b));
-	
-	if (p == NULL)
-		{
-			return ('\0');
-		}
-	
-	return (p);
+void *p;
+p = malloc(b);
+if (p == NULL)
+{
+exit(98);
+}
+return (p);
 }
