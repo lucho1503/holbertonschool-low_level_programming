@@ -37,7 +37,7 @@ if (n >= l2)
 {
 return (s2);
 }
-p = malloc((l1 + l2) *sizeof(char));
+p = malloc((l1 + l2 + 1) *sizeof(char));
 if (p == NULL)
 {
 return (NULL);
