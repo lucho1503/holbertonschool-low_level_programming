@@ -25,7 +25,7 @@ if (l == NULL)
 {
 return ('\0');
 }
-for (i = min; i <= m; i++)
+for (i = 0; i <= m; i++)
 {
 l[i] = min;
 min++;
