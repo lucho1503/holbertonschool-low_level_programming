@@ -32,15 +32,12 @@ return (NULL);
 new_dog->name = malloc((i + 1) * sizeof(char));
 if (new_dog->name == NULL)
 {
-free(new_dog->name);
-return (0);
+return (NULL);
 }
 new_dog->owner = malloc((j + 1) * sizeof(char));
 if (new_dog->owner == NULL)
 {
-free(new_dog->owner);
-free(new_dog);
-return (0);
+return (NULL);
 }
 for (i = 0; name[i]; i++)
 {
