@@ -34,11 +34,15 @@ return (NULL);
 if ((*l).name == NULL)
 {
 free((*l).name);
+free(l);
+return (0);
 }
 (*l).owner = malloc(j + 1);
 if ((*l).owner == NULL)
 {
 free((*l).owner);
+free(l);
+return (0);
 }
 for (k = 0; k < i; k++)
 {
