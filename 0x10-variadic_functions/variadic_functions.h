@@ -10,7 +10,15 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 int _putchar(char c);
 
-typedef struct pt {
+/**
+ * struct pt - Struct pt
+ *
+ * @t: The operator.
+ * @p: pointer to function.
+ */
+
+typedef struct pt
+{
 	char t;
 	void (*p)(va_list);
 } mr;
