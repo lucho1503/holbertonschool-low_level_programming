@@ -3,9 +3,10 @@
 #include <stdarg.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_numbers - entry point.
+ * @n: numbers of arguments.
+ * @separator: string to print.
+ * Return: Nothing.
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -16,21 +17,17 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(var, n);
 
 	for (i = 0; i < n; i++)
+	{
+		m = va_arg(var, int);
+		if (separator != NULL)
 		{
-			m = va_arg(var, int);
-			if (separator != NULL)
-				{
-					
-					
-					printf("%d", m);
-					if (i < n - 1)
-						{
-					printf("%s", separator);
-						}
-				}
-			
-			
+			printf("%d", m);
+			if (i < n - 1)
+			{
+				printf("%s", separator);
+			}
 		}
+	}
 	printf("\n");
 	va_end(var);
 }
