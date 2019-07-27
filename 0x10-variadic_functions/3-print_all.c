@@ -3,61 +3,107 @@
 #include <stdarg.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_ch - entry point.
+ * @var: list.
+ * Return: nothing.
  */
 
-void print_c(va_list *var)
+void print_ch(va_list var)
 {
-        printf("%c", va_arg(var, int));
-}
-void print_i(va_list *var)
-{
-        printf("%d", va_arg(var, int));
-}
-void print_f(va_list *var)
-{
-        printf("%f", va_arg(var, double));
-}
-void print_s(va_list *var)
-{
-        printf("%s", va_arg(var, char *));
+	char li;
+
+	li = va_arg(var, int);
+	printf("%c", li);
 }
 
+/**
+ * print_int - entry point.
+ * @var: list.
+ * Return: nothing.
+ */
+
+void print_int(va_list var)
+{
+	int li;
+
+	li = va_arg(var, int);
+	printf("%d", li);
+}
+
+/**
+ * print_flo - entry point.
+ * @var: list.
+ * Return: nothing.
+ */
+
+void print_flo(va_list var)
+{
+	double li;
+
+	li = va_arg(var, double);
+	printf("%f", li);
+}
+
+/**
+ * print_str - entry point.
+ * @var: list.
+ * Return: nothing.
+ */
+
+void print_str(va_list var)
+{
+	char *li;
+
+	li = va_arg(var, char *);
+	if (li == NULL)
+	{
+		li = "(nil)";
+	}
+	printf("%s", li);
+}
+
+/**
+ * print_all - entry point.
+ * @format: list of types arguments.
+ * Return: nothing.
+ */
 
 void print_all(const char * const format, ...)
 {
-	va_list var;
-	int i = 0;
-	char *l;
-	l = (char *) format;
-	va_start(var, format);
-	ar_r st_r [] = {
-		{"c", print_c},
-		{"i", print_i},
-		{"f", print_f},
-		{"s", print_s}
-	};
-	while(*l)
+mr L[4] = {
+	{'c', print_ch},
+	{'i', print_int},
+	{'f', print_flo},
+	{'s', print_str}
+};
+int i = 0;
+int j = 0;
+int k = 0;
+va_list valist;
+
+va_start(valist, format);
+while (format[i] != '\0' && format)
+{
+	j = 0;
+	while (j < 4)
 	{
-		while (st_r[i].pt)
+		if (format[i] == L[j].t)
 		{
-			if (st_r[i].pt[0] == *l)
+			switch (k)
 			{
-			st_r[i].pt(&var);
-			l++;
-			if (l == 0)
-			{
-				printf("(nil)");
+			case 0:
 				break;
+			default:
+				printf(", ");
 			}
-			l--;
-			printf("%c, ", *l);
-			}
-			i++;
+			L[j].p(valist);
+			k++;
+			break;
 		}
-		l++;
+		j++;
 	}
-	printf("\n");
+	i++;
+}
+printf("\n");
+va_end(valist);
 }
