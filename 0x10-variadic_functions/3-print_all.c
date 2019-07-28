@@ -82,7 +82,7 @@ int k = 0;
 va_list valist;
 
 va_start(valist, format);
-while (format[i] != '\0' && format)
+while (format && format[i] != '\0')
 {
 	j = 0;
 	while (j < 4)
