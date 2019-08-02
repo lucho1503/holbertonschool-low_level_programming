@@ -4,14 +4,15 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_list - entry point.
+ * @h: pointre to struct.
+ * Return: Always elements.
  */
 
 size_t print_list(const list_t *h)
 {
 	int i = 0;
+
 	while (h != '\0')
 	{
 		if (h->str != NULL)
