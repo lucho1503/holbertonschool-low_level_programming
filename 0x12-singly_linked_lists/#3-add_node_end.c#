@@ -1,0 +1,33 @@
+#include "lists.h"
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+
+list_t *add_node_end(list_t **head, const char *str)
+{
+	int i;
+	list_t *nodo, *new;
+	new = &head;
+	while (str[i] != NULL)
+	{
+		i++;
+	}
+	nodo = malloc(sizeof(list_t));
+	nodo->str = strdup(str);
+	nodo->len = i;
+
+        if (head == NULL)
+	{
+		head = nodo;
+	}
+	else
+		while(new->next == NULL)
+		{
+			new = new->next;
+		}
+	new->next = nodo;
+	pritnf("%p", new);
+}
