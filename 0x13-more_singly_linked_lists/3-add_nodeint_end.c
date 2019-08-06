@@ -1,28 +1,28 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * add_nodeint_end - entry point.
+ * @head: double pointer to struct.
+ * @n: contains the numbers to list.
+ * Return: address of memory of new element.
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *node;
-	listint_t *new = NULL;
-	
+	listint_t *new;
+
 	node = malloc(sizeof(listint_t));
 	if (node == NULL)
 	{
 		return (NULL);
-		free (node);
+		free(node);
 	}
 	node->next = NULL;
 	if (*head == NULL)
 	{
 		*head = node;
 	}
-	
 	else
 	{
 		new = *head;
@@ -33,6 +33,5 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		new->next = node;
 		node->n = n;
 	}
-	node = NULL;
 	return (*head);
 }
