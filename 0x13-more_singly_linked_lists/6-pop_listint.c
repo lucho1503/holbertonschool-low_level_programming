@@ -15,16 +15,11 @@ int pop_listint(listint_t **head)
 	{
 		return (0);
 	}
-	remove = malloc(sizeof(listint_t));
-	if (remove == NULL)
+
+	if (head)
 	{
-		free(remove);
-		return (0);
-	}
-	remove = *head;
-	aux = (*head)->n;
-	if (head != NULL)
-	{
+		aux = (*head)->n;
+		remove = *head;
 		*head = (*head)->next;
 		free(remove);
 	}
