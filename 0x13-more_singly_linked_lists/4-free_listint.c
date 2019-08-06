@@ -1,23 +1,19 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * free_listint - entry point.
+ * @head: pointer to struct type listint.
+ * Return: Nothing.
  */
 
 void free_listint(listint_t *head)
 {
 	listint_t *liberar;
-	
-	while(head)
+
+	while (head)
 	{
 		liberar = head;
 		head = liberar->next;
-		free (liberar);
-		
-	}	
-	head = NULL; 
-		
-	
+		free(liberar);
+	}
 }
