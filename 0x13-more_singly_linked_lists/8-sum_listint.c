@@ -11,15 +11,15 @@ int sum_listint(listint_t *head)
 	int aux;
 
 	aux = head->n;
-	if (head == NULL)
+	while (head->next)
 	{
-		return (0);
-	}
-	else
-		while (head->next)
+		if (head != NULL)
 		{
 			head = head->next;
 			aux = head->n + aux;
 		}
+		else
+			return (0);
+	}
 	return (aux);
 }
