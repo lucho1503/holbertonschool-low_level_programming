@@ -19,7 +19,7 @@ int sum_dlistint(dlistint_t *head)
 			suma = head->n + suma;
 		}
 		else
-			return (0);
+			return (NULL);
 	}
 	return (suma);
 }
