@@ -11,10 +11,10 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
-	hash_node_t *node;
-	hash_node_t *arr;
+	hash_node_t *node = NULL;
+	hash_node_t *arr = NULL;
 
-	if (ht == NULL || key == NULL || value == NULL)
+	if (ht == NULL || key == NULL || value == NULL || ht->array == NULL)
 		return (0);
 	if (!strcmp(key, ""))
 	{
