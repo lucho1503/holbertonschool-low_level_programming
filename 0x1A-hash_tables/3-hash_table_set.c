@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node = NULL;
 	hash_node_t *arr = NULL;
 
-	if (!ht || !key || !value || !ht->array)
+	if (ht == NULL || key == NULL || value == NULL|| ht->array == NULL)
 		return (0);
 	if (!strcmp(key, ""))
 	{
@@ -32,7 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		arr = arr->next;
 	}
-	node = calloc(1, sizeof(hash_node_t *));
+	node = calloc(1, sizeof(hash_node_t));
 	if (node == NULL)
 	{
 		return (0);
