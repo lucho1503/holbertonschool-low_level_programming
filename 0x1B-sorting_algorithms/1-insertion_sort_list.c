@@ -10,12 +10,12 @@ void sorted_list(listint_t **list, listint_t *left, listint_t *der);
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t **sorted;
+	listint_t **sorted = NULL;
 	listint_t *current = NULL;
 	listint_t *der;
 
 	sorted = list;
-	if (!*list || !list || !(*list)->next)
+	if (!list)
 		return;
 
 	current = *list;
