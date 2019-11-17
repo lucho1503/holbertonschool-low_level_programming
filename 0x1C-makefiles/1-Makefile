@@ -1,0 +1,8 @@
+CC= gcc
+SRC= main.c holberton.c
+
+
+all: main.c holberton.c
+	$(CC) main.c holberton.c -o holberton
+
+.PHONY: all clean
