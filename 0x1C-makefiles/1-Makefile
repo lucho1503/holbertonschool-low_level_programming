@@ -4,3 +4,4 @@ SRC= main.c holberton.c
 all: main.c holberton.c
 	$(CC) $(SRC) -o holberton
 
+.PHONY: all holberton clean
