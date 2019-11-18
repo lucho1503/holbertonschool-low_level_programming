@@ -1,8 +1,10 @@
 CC=gcc
 SRC=main.c holberton.c
-OBJ=$(SRC:.c=.o)
+OBJ=$(SRC:%.c=%.o)
 NAME=holberton
 CFLAGS=-Wall -Werror -Wextra -pedantic
+
+.PHONY: all clean oclean flclean re
 
 all: holbi.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
@@ -17,4 +19,4 @@ fclean:	clean oclean
 
 re: oclean all
 
-.PHONY: all clean oclean flclean re
+
