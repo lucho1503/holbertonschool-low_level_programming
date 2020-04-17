@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "search_algos.h"
 
 /**
@@ -12,11 +10,10 @@
 
 int interpolation_search(int *array, size_t size, int value)
 {
-	int low = 0;
-	int high, pos;
-	int mid = -1;
-	int index = -1;
+	int low = 0, high, pos, mid = -1, index = -1;
 
+	if (array == NULL)
+		return (-1);
 	high = (int)size - 1;
 	while (low <= high)
 	{
